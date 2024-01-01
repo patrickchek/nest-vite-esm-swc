@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "ts-node": {
+    "swc": true,
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "types": [
+      "node"
+    ],
+    "experimentalDecorators": true,
+    "pretty": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "target": "es2021",
+    "removeComments": true,
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "jest.config.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}
